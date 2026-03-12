@@ -1,41 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NZ North Island - Minimalist Story</title>
-
+    
     <!-- External Dependencies -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <!-- Project Styles -->
-    <link rel="stylesheet" href="north-island-style.css" />
-  </head>
-  <body>
-    <div id="map"></div>
-    <div id="frame-title-overlay"></div>
+    <link rel="stylesheet" href="north-island-style.css">
+</head>
+<body>
 
-    <div id="cinema-overlay">
-      <button class="close-btn" onclick="closeOverlay()">✕</button>
-      <div id="collage-container"></div>
-    </div>
+<div id="map"></div>
+<div id="frame-title-overlay"></div>
 
-    <div id="sidebar-container">
-      <div id="sidebar"></div>
-      <div class="sidebar-toggle" onclick="toggleSidebar()">⁚</div>
-    </div>
+<div id="cinema-overlay">
+    <button class="close-btn" onclick="closeOverlay()">✕</button>
+    <div id="collage-container"></div>
+</div>
 
-    <div class="nav-ui" id="nav-container">
-      <button id="backBtn" onclick="changeFrame(-1)">BACK</button>
-      <button id="nextBtn" onclick="changeFrame(1)">NEXT</button>
-    </div>
+<div id="sidebar-container">
+    <div id="sidebar"></div>
+    <div class="sidebar-toggle" onclick="toggleSidebar()">⁚</div>
+</div>
 
-    <!-- Project Scripts -->
-    <script src="north-island-data.js"></script>
-    <script src="north-island-logic.js"></script>
-  </body>
+<div class="nav-ui" id="nav-container">
+    <button id="backBtn" onclick="changeFrame(-1)">BACK</button>
+    <button id="nextBtn" onclick="changeFrame(1)">NEXT</button>
+</div>
+
+<!-- Project Scripts -->
+<script src="north-island-data.js"></script>
+<script src="north-island-logic.js"></script>
+
+</body>
 </html>

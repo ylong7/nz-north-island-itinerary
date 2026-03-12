@@ -257,6 +257,7 @@ function showCollage(name) {
     titleOverlay.innerText = name;
     titleOverlay.classList.add('detail-mode'); // Optional hook for styling
 
+    document.getElementById('map').classList.add('blurred');
     document.getElementById('sidebar-container').classList.add('background-mode');
     
     console.log("Overlay active for: " + name);
@@ -271,6 +272,7 @@ function closeOverlay() {
     titleOverlay.innerText = frameTitles[currentFrame];
     titleOverlay.classList.remove('detail-mode');
 
+    document.getElementById('map').classList.remove('blurred');
     document.getElementById('sidebar-container').classList.remove('background-mode');
 }
 
